@@ -6,7 +6,8 @@ pipeline {
     stages {
         stage('Clone Code') {
             steps {
-                git 'https://github.com/anil91608/jenkins-node-jdk21.git'
+                git branch: 'main', url: 'https://github.com/anil91608/jenkins-node-jdk21.git'
+
             }
         }
         stage('Build Docker Image') {
